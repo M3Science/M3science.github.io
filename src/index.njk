@@ -212,7 +212,7 @@ title: Home
       <p class="contact-statement">The Particle Post is open for <em>research partnerships</em>, technical projects &amp; media collaboration.</p>
       <div class="contact-links">
         {% for link in contact_links %}
-        <a href="{{ link.href }}" class="contact-link" {% if link.href.startswith('http') %}target="_blank" rel="noopener"{% endif %}>
+        <a href="{{ link.href }}" class="contact-link" {% if link.href | startswith("http") %}target="_blank" rel="noopener"{% endif %}>
           <span>{{ link.label }}</span>
           <span>{{ link.display }} →</span>
         </a>
