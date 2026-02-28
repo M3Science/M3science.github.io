@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "Physics",
+    "items": [
+      "Quantum Mechanics",
+      "Statistical Mechanics",
+      "Classical Field Theory",
+      "Computational Physics",
+      "Electrodynamics",
+      "General Relativity (foundations)"
+    ]
+  },
+  {
+    "domain": "Data & Code",
+    "items": [
+      "Python (NumPy, SciPy, Pandas)",
+      "Scientific Visualisation",
+      "Numerical Methods",
+      "Data Pipeline Design",
+      "C++ / Julia",
+      "Machine Learning (applied)"
+    ]
+  },
+  {
+    "domain": "Communication",
+    "items": [
+      "Long-form Interview Hosting",
+      "Science Writing",
+      "Research Synthesis",
+      "Visual Explainer Design",
+      "Guest Research & Prep",
+      "Technical Documentation"
+    ]
+  }
+]

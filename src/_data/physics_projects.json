@@ -1,0 +1,47 @@
+[
+  {
+    "featured": true,
+    "label": "Featured Research",
+    "title": "Quantum Decoherence in Open Systems",
+    "body": "An investigation into how quantum systems lose coherence through environmental entanglement — modelling the decoherence timescale for spin-boson systems using density matrix formalism and Lindblad master equations.",
+    "tags": [
+      { "text": "Quantum Mechanics", "accent": true },
+      { "text": "Lindblad Formalism" },
+      { "text": "Python" },
+      { "text": "QuTiP" }
+    ]
+  },
+  {
+    "featured": false,
+    "label": "Computational Physics",
+    "title": "N-Body Gravitational Simulation",
+    "body": "Symplectic integrator implementation for long-timescale planetary dynamics. Conserves energy to machine precision using Yoshida 4th-order coefficients.",
+    "tags": [
+      { "text": "Numerical Methods", "accent": true },
+      { "text": "C++" },
+      { "text": "Visualization" }
+    ]
+  },
+  {
+    "featured": false,
+    "label": "Statistical Mechanics",
+    "title": "Phase Transitions in 2D Ising Model",
+    "body": "Monte Carlo simulation of ferromagnetic phase transitions. Observed critical exponents near Tc and verified against Onsager's exact solution.",
+    "tags": [
+      { "text": "Monte Carlo", "accent": true },
+      { "text": "Python" },
+      { "text": "Matplotlib" }
+    ]
+  },
+  {
+    "featured": false,
+    "label": "Science Communication",
+    "title": "Visual Explainer: Entropy & Information",
+    "body": "A visual essay connecting thermodynamic entropy with Shannon information theory — designed for educated non-physicists.",
+    "tags": [
+      { "text": "Explainer", "accent": true },
+      { "text": "D3.js" },
+      { "text": "SVG Animation" }
+    ]
+  }
+]

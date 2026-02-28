@@ -1,0 +1,50 @@
+[
+  {
+    "number": "01",
+    "title": "What Does It Mean for Something to Exist?",
+    "guest": "Dr. Sara Chen",
+    "topics": "Ontology · Quantum Fields",
+    "duration": "1h 24min",
+    "date": "Mar 2025"
+  },
+  {
+    "number": "02",
+    "title": "The Measurement Problem: Still Unsolved After 100 Years",
+    "guest": null,
+    "topics": "Foundations · Wave Collapse",
+    "duration": "58min",
+    "date": "Feb 2025"
+  },
+  {
+    "number": "03",
+    "title": "Entropy, Time, and the Arrow We Can't Reverse",
+    "guest": "Prof. James Wu",
+    "topics": "Thermodynamics · Time",
+    "duration": "1h 12min",
+    "date": "Jan 2025"
+  },
+  {
+    "number": "04",
+    "title": "Dark Matter: Conviction Without Evidence?",
+    "guest": null,
+    "topics": "Cosmology · Dark Matter",
+    "duration": "47min",
+    "date": "Dec 2024"
+  },
+  {
+    "number": "05",
+    "title": "The Standard Model Is Wrong. Also, It's the Best Thing We Have.",
+    "guest": null,
+    "topics": "Particle Physics",
+    "duration": "1h 08min",
+    "date": "Nov 2024"
+  },
+  {
+    "number": "06",
+    "title": "Symmetry Breaking and Why the Universe Exists at All",
+    "guest": null,
+    "topics": "Cosmology · Symmetry",
+    "duration": "52min",
+    "date": "Oct 2024"
+  }
+]

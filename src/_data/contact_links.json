@@ -1,0 +1,6 @@
+[
+  { "label": "Email",       "display": "hello@theparticlepost.com", "href": "mailto:hello@theparticlepost.com" },
+  { "label": "LinkedIn",    "display": "/in/yourname",              "href": "https://linkedin.com/in/yourname" },
+  { "label": "GitHub",      "display": "github.com/yourname",       "href": "https://github.com/yourname" },
+  { "label": "CV / Résumé", "display": "Download PDF",              "href": "/assets/cv.pdf" }
+]

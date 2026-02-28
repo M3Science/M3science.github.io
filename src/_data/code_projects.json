@@ -1,0 +1,64 @@
+[
+  {
+    "label": "Data Analysis",
+    "title": "Exoplanet Transit Detection Pipeline",
+    "body": "End-to-end photometric pipeline processing Kepler lightcurve data. Implements BLS algorithm for period finding with false-positive suppression.",
+    "tags": [
+      { "text": "Python", "accent": true },
+      { "text": "Astropy" },
+      { "text": "Pandas" },
+      { "text": "Scipy" }
+    ]
+  },
+  {
+    "label": "Simulation",
+    "title": "Cellular Automata for Pattern Formation",
+    "body": "Reaction-diffusion systems simulated via GPU-accelerated finite difference methods. Reproduces Turing instability and spatial pattern emergence.",
+    "tags": [
+      { "text": "CUDA", "accent": true },
+      { "text": "NumPy" },
+      { "text": "Animation" }
+    ]
+  },
+  {
+    "label": "Automation",
+    "title": "Research Paper Digest System",
+    "body": "Automated arXiv monitoring and summarisation pipeline with topic clustering. Delivers daily briefings filtered by keyword relevance and citation network.",
+    "tags": [
+      { "text": "NLP", "accent": true },
+      { "text": "Python" },
+      { "text": "RSS" },
+      { "text": "LLM" }
+    ]
+  },
+  {
+    "label": "Visualisation",
+    "title": "Interactive Phase Space Explorer",
+    "body": "Browser-based tool for visualising dynamical systems and strange attractors. Real-time parameter control with WebGL rendering for responsive 3D trajectories.",
+    "tags": [
+      { "text": "WebGL", "accent": true },
+      { "text": "JavaScript" },
+      { "text": "Three.js" }
+    ]
+  },
+  {
+    "label": "Scientific Computing",
+    "title": "Spectral Methods PDE Solver",
+    "body": "Pseudospectral solver for nonlinear PDEs using FFT-based differentiation. Benchmarked against finite-element approaches with 10× speedup for smooth solutions.",
+    "tags": [
+      { "text": "Python", "accent": true },
+      { "text": "FFT" },
+      { "text": "NumPy" }
+    ]
+  },
+  {
+    "label": "Open Source",
+    "title": "physutils — Python Toolkit",
+    "body": "Utility library for common physics calculations: unit conversions, constants, dimensional analysis, and error propagation. 200+ GitHub stars.",
+    "tags": [
+      { "text": "Open Source", "accent": true },
+      { "text": "Python" },
+      { "text": "PyPI" }
+    ]
+  }
+]

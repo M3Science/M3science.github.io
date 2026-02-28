@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "⚛",
+    "title": "Physics & Research",
+    "description": "Quantum mechanics, field theory, and computational physics research.",
+    "href": "#physics"
+  },
+  {
+    "icon": "⌬",
+    "title": "Code & Data",
+    "description": "Scientific computing, data analysis, simulations, and visualizations.",
+    "href": "#code"
+  },
+  {
+    "icon": "◎",
+    "title": "Podcast & Media",
+    "description": "Science communication through long-form audio and editorial content.",
+    "href": "#podcast"
+  },
+  {
+    "icon": "◻",
+    "title": "About",
+    "description": "Background, mission, and the through-line connecting it all.",
+    "href": "#about"
+  }
+]

@@ -1,0 +1,233 @@
+---
+layout: base.njk
+title: Home
+---
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-ornament" aria-hidden="true">
+    <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="300" cy="300" r="200" stroke="#4db8b8" stroke-width="0.5"/>
+      <circle cx="300" cy="300" r="240" stroke="#4db8b8" stroke-width="0.3" stroke-dasharray="4 8"/>
+      <circle cx="300" cy="300" r="160" stroke="#4db8b8" stroke-width="0.3"/>
+      <circle cx="300" cy="300" r="120" stroke="#4db8b8" stroke-width="0.5" stroke-dasharray="2 6"/>
+      <line x1="100" y1="300" x2="500" y2="300" stroke="#4db8b8" stroke-width="0.3"/>
+      <line x1="300" y1="100" x2="300" y2="500" stroke="#4db8b8" stroke-width="0.3"/>
+      <line x1="158" y1="158" x2="442" y2="442" stroke="#4db8b8" stroke-width="0.3"/>
+      <line x1="442" y1="158" x2="158" y2="442" stroke="#4db8b8" stroke-width="0.3"/>
+      <circle cx="420" cy="300" r="5" fill="#4db8b8" opacity="0.8" class="orbit-dot"/>
+      <circle cx="300" cy="300" r="6" fill="#4db8b8" opacity="0.6"/>
+      <path d="M 300 300 Q 400 250 500 200" stroke="#4db8b8" stroke-width="0.3" fill="none"/>
+      <path d="M 300 300 Q 380 350 460 400" stroke="#4db8b8" stroke-width="0.3" fill="none"/>
+      <path d="M 300 300 Q 200 250 100 200" stroke="#4db8b8" stroke-width="0.3" fill="none"/>
+      <text x="50" y="570" fill="#4db8b8" font-size="10" font-family="monospace" opacity="0.6">ψ(x,t) = Ae^i(kx−ωt)</text>
+    </svg>
+  </div>
+
+  <div class="hero-tag">{{ site.tagline }}</div>
+  <h1>The<br/><em>Particle</em><br/>Post.</h1>
+  <div class="hero-subtitle">{{ site.subtitle }}</div>
+  <p class="hero-desc">{{ site.description }}</p>
+  <div class="hero-cta">
+    <a href="#physics" class="btn btn-primary">Read the Post</a>
+    <a href="#contact" class="btn btn-ghost">Work With Us</a>
+  </div>
+
+  <!-- Domain cards -->
+  <div class="domains">
+    {% for domain in domains %}
+    <a href="{{ domain.href }}" class="domain-card">
+      <span class="domain-icon">{{ domain.icon }}</span>
+      <div class="domain-title">{{ domain.title }}</div>
+      <div class="domain-desc">{{ domain.description }}</div>
+      <span class="domain-arrow">Explore →</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- PHYSICS SECTION -->
+<section id="physics">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <div>
+      <h2>Physics &amp; <em>Research</em></h2>
+      <p class="section-desc">Rigorous investigation of fundamental phenomena — from quantum field theory to emergent complexity.</p>
+    </div>
+  </div>
+
+  <div class="project-grid reveal">
+    {% for project in physics_projects %}
+      {% if project.featured %}
+      <div class="project-card featured">
+        <div class="featured-text">
+          <div class="project-label">{{ project.label }}</div>
+          <div class="project-title">{{ project.title }}</div>
+          <p class="project-body">{{ project.body }}</p>
+          <div class="tag-row">
+            {% for tag in project.tags %}
+              <span class="tag{% if tag.accent %} accent{% endif %}">{{ tag.text }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="featured-visual" aria-hidden="true">
+          <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="waveform" style="width:85%; opacity:0.6;">
+            <path d="M0 100 Q20 60 40 100 Q60 140 80 100 Q100 60 120 100 Q140 140 160 100 Q180 60 200 100 Q220 140 240 100 Q260 60 280 100 Q300 140 320 100" stroke="#4db8b8" stroke-width="1.5" fill="none" opacity="0.9"/>
+            <path d="M0 100 Q25 40 50 100 Q75 160 100 100 Q125 40 150 100 Q175 160 200 100 Q225 40 250 100 Q275 160 300 100" stroke="#7c9fc9" stroke-width="1" fill="none" opacity="0.6"/>
+            <path d="M0 100 Q30 20 60 100 Q90 180 120 100 Q150 20 180 100 Q210 180 240 100 Q270 20 300 100" stroke="#9b89c4" stroke-width="0.7" fill="none" opacity="0.4"/>
+            <line x1="0" y1="100" x2="300" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <text x="10" y="20" fill="#4db8b8" font-size="9" font-family="monospace" opacity="0.5">|ψ⟩ = α|0⟩ + β|1⟩</text>
+          </svg>
+        </div>
+      </div>
+      {% else %}
+      <div class="project-card">
+        <div class="project-label">{{ project.label }}</div>
+        <div class="project-title">{{ project.title }}</div>
+        <p class="project-body">{{ project.body }}</p>
+        <div class="tag-row">
+          {% for tag in project.tags %}
+            <span class="tag{% if tag.accent %} accent{% endif %}">{{ tag.text }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="stat-row reveal">
+    {% for stat in stats_physics %}
+    <div class="stat">
+      <div class="stat-num">{{ stat.num }}</div>
+      <div class="stat-label">{{ stat.label }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- CODE & DATA SECTION -->
+<section id="code">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <div>
+      <h2>Code &amp; <em>Data</em></h2>
+      <p class="section-desc">From raw datasets to insight — scientific computing, analysis pipelines, and precise visualizations.</p>
+    </div>
+  </div>
+
+  <div class="project-grid reveal">
+    {% for project in code_projects %}
+    <div class="project-card">
+      <div class="project-label" style="color: var(--accent);">{{ project.label }}</div>
+      <div class="project-title">{{ project.title }}</div>
+      <p class="project-body">{{ project.body }}</p>
+      <div class="tag-row">
+        {% for tag in project.tags %}
+          <span class="tag{% if tag.accent %} accent{% endif %}">{{ tag.text }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- PODCAST SECTION -->
+<section id="podcast">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <div>
+      <h2>Podcast &amp; <em>Media</em></h2>
+      <p class="section-desc">The Particle Post Podcast — long-form conversations at the frontier of physics, for listeners who refuse to settle for soundbites.</p>
+    </div>
+  </div>
+
+  <div class="episode-list reveal">
+    {% for ep in episodes %}
+    <div class="episode">
+      <div class="ep-num">{{ ep.number }}</div>
+      <div>
+        <div class="ep-title">
+          {{ ep.title }}{% if ep.guest %} — with {{ ep.guest }}{% endif %}
+        </div>
+        <div class="ep-meta">{{ ep.topics }} · {{ ep.duration }} · {{ ep.date }}</div>
+      </div>
+      <div class="ep-play" role="button" aria-label="Play episode {{ ep.number }}">▶</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="stat-row reveal" style="margin-top: 32px;">
+    {% for stat in stats_podcast %}
+    <div class="stat">
+      <div class="stat-num">{{ stat.num }}</div>
+      <div class="stat-label">{{ stat.label }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <div>
+      <h2>About <em>The Post</em></h2>
+    </div>
+  </div>
+
+  <div class="about-grid reveal">
+    <div>
+      <div class="about-photo-placeholder">
+        PROFESSIONAL<br/>PHOTO<br/><br/>Neutral setting<br/>Natural light
+      </div>
+    </div>
+    <div class="about-text">
+      {% for para in about.paragraphs %}
+        <p>{{ para | safe }}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="skills-grid reveal">
+    {% for group in skills %}
+    <div class="skill-block">
+      <div class="skill-domain">{{ group.domain }}</div>
+      <ul class="skill-list">
+        {% for item in group.items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <div class="contact-grid">
+    <div class="reveal">
+      <p class="section-num" style="margin-bottom:24px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.2em;color:var(--text-muted);">05 / Contact</p>
+      <p class="contact-statement">The Particle Post is open for <em>research partnerships</em>, technical projects &amp; media collaboration.</p>
+      <div class="contact-links">
+        {% for link in contact_links %}
+        <a href="{{ link.href }}" class="contact-link" {% if link.href.startswith('http') %}target="_blank" rel="noopener"{% endif %}>
+          <span>{{ link.label }}</span>
+          <span>{{ link.display }} →</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="collab-types reveal">
+      <p style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:24px;">We're available for</p>
+      {% for item in collab_types %}
+      <div class="collab-item">
+        <div class="collab-title">{{ item.title }}</div>
+        <div class="collab-desc">{{ item.description }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

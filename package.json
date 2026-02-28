@@ -1,0 +1,12 @@
+{
+  "name": "particle-post",
+  "version": "1.0.0",
+  "description": "The Particle Post — The Concierge of Science Communication",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

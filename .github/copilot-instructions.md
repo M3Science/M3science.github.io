@@ -1,0 +1,5 @@
+# Copilot Instructions — The Particle Post
+
+Single-page Eleventy 2.x portfolio site (Nunjucks + vanilla CSS/JS, no frameworks). Content is JSON files in `src/_data/` auto-exposed as template variables. One template (`src/index.njk`), one layout (`src/_includes/base.njk`), one stylesheet (`src/assets/css/main.css` — dark theme, CSS custom properties: `--accent: #4db8b8`), one script (`src/assets/js/main.js` — scroll-reveal, particle canvas, mobile nav). Deployed via GitHub Pages.
+**Content:** edit JSON in `src/_data/` (schemas match existing entries). **Styles:** use CSS variables in `main.css`. **JS:** vanilla only, no dependencies. **New sections:** add `<section id="...">` in `index.njk` + nav entry in `nav.json`. **Commands:** `npm start` (dev), `npm run build` (prod).
+Data files: `site.json`, `nav.json`, `domains.json`, `physics_projects.json`, `code_projects.json`, `episodes.json`, `stats_physics.json`, `stats_podcast.json`, `skills.json`, `collab_types.json`, `contact_links.json`, `about.json`.
