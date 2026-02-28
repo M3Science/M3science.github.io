@@ -1,6 +1,6 @@
 [
-  { "label": "Email",       "display": "hello@theparticlepost.com", "href": "mailto:hello@theparticlepost.com" },
-  { "label": "LinkedIn",    "display": "/in/yourname",              "href": "https://linkedin.com/in/yourname" },
-  { "label": "GitHub",      "display": "github.com/yourname",       "href": "https://github.com/yourname" },
+  { "label": "Email",       "display": "Camillaedens123@gmail.com", "href": "mailto:Camillaedens123@gmail.com" },
+  { "label": "LinkedIn",    "display": "/in/camilla-edens-002669274", "href": "https://www.linkedin.com/in/camilla-edens-002669274" },
+  { "label": "GitHub",      "display": "github.com/m3science",       "href": "https://github.com/m3science" },
   { "label": "CV / Résumé", "display": "Download PDF",              "href": "/assets/cv.pdf" }
 ]
