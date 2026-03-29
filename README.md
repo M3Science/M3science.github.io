@@ -120,3 +120,4 @@ Add a `CNAME` file to `src/assets/` containing your domain (e.g. `theparticlepos
 - **Vanilla CSS + JS** — no framework dependencies
 - **GitHub Actions** — CI/CD deploy pipeline
 - **GitHub Pages** — hosting
+# M3science.github.io
