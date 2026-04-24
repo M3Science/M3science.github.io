@@ -583,26 +583,16 @@ h2 em { font-style: italic; color: var(--accent); }
 }
 
 .about-photo-placeholder {
-  aspect-ratio: 3/4;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-muted);
-  font-family: 'DM Mono', monospace;
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-align: center;
-  padding: 24px;
-  position: relative;
+  display: none;
 }
 
-.about-photo-placeholder::after {
-  content: '';
-  position: absolute;
-  inset: 12px;
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
   border: 1px solid var(--border);
+  display: block;
 }
 
 .about-text p {
